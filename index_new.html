@@ -3,9 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
+    <title>Chi-Ning Chou</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
@@ -20,6 +36,11 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
   <body>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".fancybox").fancybox();
+        });
+    </script>
       <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
@@ -33,37 +54,63 @@
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#About">About</a></li>
-              <li><a href="http://www.regor.url.tw/cnchou">Blog</a></li>
+              <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+              <li><a href="#research" data-toggle="tab">Research</a></li>
+              <li><a href="#projects" data-toggle="tab">Projects</a></li>
+              <li><a href="doc/Chi_Ning_Chou_cv.pdf" target="_blank">Curriculum Vitae</a>
+              <li><a href="http://www.regor.url.tw/cnchou" target="_blank">Blog</a></li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <div class="container theme-showcase" role="main">
+      <div class="tab-content container theme-showcase" role="main">
 
-        <h1>Chi-Ning Chou</h1>
-        <b>Research Assistant</b><br>
-        <a href="https://www.iis.sinica.edu.tw">Institute of Information Science</a><br>
-        <a href="https://www.sinica.edu.tw">Academia Sinica</a><br>
-
-        <div class="page-header" id="About">
-          <h2>About Me</h2>
+<!-- Home -->
+        <div class="tab-pane active" id="home">
+          <div id="intro" class="jumbotron">
+            <a class="fancybox" rel="group" href="img/big.jpg"><img id="frontphoto" src="img/small.png" alt="" /></a>
+            <p class="intro"> My name is Chi-Ning Chou. I received my Bachelor degree in <a href="https://www.csie.ntu.edu.tw" target="_blank">Computer Science and Information Engineering</a> at <a href="https://www.ntu.edu.tw" target="_blank">National Taiwan University</a> this (2016) June. I'm currently working as a research assistant under the supervision of Dr. <a href="http://www.iis.sinica.edu.tw/~kmchung/" target="_blank">Kai-Min Chung</a>.
+            </p>
+            </br>
+            <p class="intro"> I'm applying for Ph.D programs in theoretical computer science this year. My research interests are in the field of complexity theory, algorithm analysis, combinatorics, optimization, and high-dimensional statistics.
+            </p>
+            </br>
+            <p class="intro">Outside academics, I love playing <a href="https://www.youtube.com/watch?v=Vw7QpZ_snak" target="_blank">baseball</a> and <a href="https://www.youtube.com/watch?v=_pEzpHeE4_U" target="_blank">rubiks cube</a>.
+            </p>
+          </div>
         </div>
 
-       
-        <div class="page-header">
-          <h2>Research Interest</h2>
+<!-- Research -->
+        <div class="tab-pane" id="research">
+          <div class="topic">
+            <h3>Computational Aspects of Spike Neural Networks
+          </div>
+          <p>Advisor: Dr. Kai-Ming Chung, Dr. Chi-Jen Lu</p>
+          <ul class="list">
+            <li>Initiated theoretical study on computational aspect of spike-based neural network.
+            <li>Discovered and proved the connection of spike neural network and $\ell_1$ minimization problem.
+            <li>Proposed new algorithmic tool by using spike as a light-weight projection method.
+          </ul>
+
+          <div class="topic">
+            <h3>Computational and Statistical Tradeoff in Graphical Problems
+          </div>
+        </div>
+
+<!-- Projects -->
+        <div class="tab-pane" id="projects">
+        <p>Hi, this is the projects page.</p>
         </div>
 
       </div> <!-- container -->
 
-      <footer>
+      <footer class="site-footer">
         <div class="container">
         <ul class="list-unstyled">
         <li class="text-muted">Posted by: Chi-Ning Chou</li>
-        <li class="text-muted">Last update: EDT 14:05, 14 Sep, 2016</li>
+        <li class="text-muted">Contact: cnchou@iis.sinica.edu.tw</li>
+        <li class="text-muted">Last update: EDT 20:34, 22 Oct, 2016</li>
         </ul>
         </div>
       </footer>

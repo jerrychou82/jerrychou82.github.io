@@ -4,18 +4,47 @@
    Author's custom styles
    ========================================================================== */
 
+body {
+    background-color: #F2F2F2;
+}
 
+.nav {
+    font-size: 16px;
+}
 
+.jumbotron {
+    background-color: rgba(10%,10%,10%,0.1);
+}
 
+/* Home */
 
+.intro {
+    margin-right: 300px;
+    margin-left: 50px;
+}
 
+#intro {
+    margin-top: 20px;
+    font-family: sans-serif;
+}
 
+#frontphoto {
+    margin-top: 50px;
+    width: 250px;
+    float: right;
+}
 
+/* Research & Prjects */
+.topic {
+    background = "#FFFFFF";
+    border-bottom = 1px solid #800517;
+}
 
-
-
-
-
+/* footer */
+.site-footer {
+    border-top: 1px solid #800517;
+    padding: 20px 0;
+}
 
 
 
