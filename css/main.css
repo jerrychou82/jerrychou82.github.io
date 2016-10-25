@@ -13,7 +13,7 @@ body {
 }
 
 .jumbotron {
-    background-color: rgba(10%,10%,10%,0.1);
+    background-color: rgba(40%,10%,10%,0.1);
 }
 
 /* Home */
@@ -29,15 +29,37 @@ body {
 }
 
 #frontphoto {
-    margin-top: 50px;
-    width: 250px;
+    margin-top: 30px;
+    width: 280px;
     float: right;
 }
 
 /* Research & Prjects */
 .topic {
-    background = "#FFFFFF";
-    border-bottom = 1px solid #800517;
+    background: "#FFFFFF";
+}
+
+.advisor {
+    font-style: italic;
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 22px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.details {
+    margin-bottom: 30px;
+}
+
+.list {
+    font-size: 16px;
+}
+
+.lead {
+    font-size: 16px;
 }
 
 /* footer */

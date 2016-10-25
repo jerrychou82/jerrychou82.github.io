@@ -1,5 +1,148 @@
-<html>
+<!doctype html>
+<html class="no-js" lang="">
   <head>
-    <meta http-equiv="refresh" content="0; url=http://www.regor.url.tw/cnchou/" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Chi-Ning Chou</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <!-- MathJax -->
+    <script type="text/javascript" async
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
+  <body>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".fancybox").fancybox();
+        });
+    </script>
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Chi-Ning Chou</a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+              <li><a href="#research" data-toggle="tab">Research</a></li>
+              <li><a href="#projects" data-toggle="tab">Projects</a></li>
+              <li><a href="doc/cnchou_cv.pdf" target="_blank">Curriculum Vitae</a>
+              <li><a href="http://www.regor.url.tw/cnchou" target="_blank">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="tab-content container theme-showcase" role="main">
+
+<!-- Home -->
+        <div class="tab-pane active" id="home">
+          <div id="intro" class="jumbotron">
+            <a class="fancybox" rel="group" href="img/big.jpg"><img id="frontphoto" src="img/small.png" alt="" /></a>
+            <p class="intro"> My name is Chi-Ning Chou. I received my Bachelor degree in <a href="https://www.csie.ntu.edu.tw" target="_blank">Computer Science and Information Engineering</a> at <a href="https://www.ntu.edu.tw" target="_blank">National Taiwan University</a> this (2016) June. I'm currently working as a research assistant under the supervision of Dr. <a href="http://www.iis.sinica.edu.tw/~kmchung/" target="_blank">Kai-Min Chung</a>.
+            </p>
+            <p class="intro"> I'm applying for Ph.D programs in theoretical computer science this year. My research interests are in the field of complexity theory, algorithm analysis, combinatorics, optimization, and high-dimensional statistics.
+            </p>
+            <p class="intro">Outside academics, I love playing <a href="https://www.youtube.com/watch?v=Vw7QpZ_snak" target="_blank">baseball</a> and <a href="https://www.youtube.com/watch?v=_pEzpHeE4_U" target="_blank">rubiks cube</a>. Also, I wrote some of my thoughts and what I had learned in <a href="http://www.regor.url.tw/cnchou/">my blog</a>.
+            </p>
+          </div>
+        </div>
+
+<!-- Research -->
+        <div class="tab-pane" id="research">
+        </div>
+
+<!-- Projects -->
+        <div class="tab-pane" id="projects">
+        <p>Hi, this is the projects page.</p>
+        </div>
+
+      </div> <!-- container -->
+
+      <footer class="site-footer">
+        <div class="container">
+        <ul class="list-unstyled">
+        <li class="text-muted">Posted by: Chi-Ning Chou</li>
+        <li class="text-muted">Contact: cnchou [at] iis.sinica.edu.tw</li>
+        <li class="text-muted">Last update: EDT 20:34, 22 Oct, 2016</li>
+        </ul>
+        </div>
+      </footer>
+
+    <!-- XML -->
+    <script type="text/javascript">
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          myFunction(this);
+          alert("success");
+        }
+      };
+      xhttp.open("GET", "doc/research.xml", true);
+      xhttp.send();
+
+      function myFunction(xml) {
+        var xmlDoc = xml.responseXML;
+        var x, content;
+        content = "";
+        x = xmlDoc.getElementsByTagName("research");
+        for (i = 0; i < x.length; i++) {
+          content += "<div class=\"topic\"><p class=\"title\">" + 
+          x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
+          "</div>" +
+          "<p class=\"advisor\">Advisor: " +
+          x[i].getElementsByTagName("advisor")[0].childNodes[0].nodeValue + 
+          "</p>" + 
+          "<p class=\"lead\">" +
+          x[i].getElementsByTagName("abstract")[0].childNodes[0].nodeValue +
+          "<a href=\"doc/" +
+          x[i].getElementsByTagName("doclink")[0].childNodes[0].nodeValue +
+          "\" target=\"_blank\">[" +
+          x[i].getElementsByTagName("docname")[0].childNodes[0].nodeValue +
+          "]</a></p>"
+        }
+        document.getElementById("research").innerHTML = content;
+      }
+    </script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
