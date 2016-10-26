@@ -8,19 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Add jQuery library -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-    <!-- Add mousewheel plugin (this is optional) -->
-    <script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>-->
 
     <!-- Add fancyBox -->
     <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
     <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-    <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-    <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 
     <!-- MathJax -->
     <script type="text/javascript" async
@@ -37,7 +30,7 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <!--<script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
   </head>
   <body>
     <script type="text/javascript">
@@ -106,19 +99,25 @@
 
     <!-- XML -->
     <script type="text/javascript">
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
+      var xmlhttp;
+      if (window.XMLHttpRequest) {
+        xmlhttp = new XMLHttpRequest();
+      } else {
+        // code for older browsers
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
           myFunction(this);
-          alert("success");
         }
       };
-      xhttp.open("GET", "doc/research.xml", true);
-      xhttp.send();
+      xmlhttp.open("GET", "doc/research.xml", true);
+      xmlhttp.send();
 
       function myFunction(xml) {
-        var xmlDoc = xml.responseXML;
-        var x, content;
+        var xmlDoc, x, content;
+        var parser = new DOMParser();
+        xmlDoc =  parser.parseFromString(xml.responseText, "text/xml");
         content = "";
         x = xmlDoc.getElementsByTagName("research");
         for (i = 0; i < x.length; i++) {
@@ -127,21 +126,21 @@
           "</div>" +
           "<p class=\"advisor\">Advisor: " +
           x[i].getElementsByTagName("advisor")[0].childNodes[0].nodeValue + 
-          "</p>" + 
-          "<p class=\"lead\">" +
-          x[i].getElementsByTagName("abstract")[0].childNodes[0].nodeValue +
-          "<a href=\"doc/" +
+          " <a href=\"doc/" +
           x[i].getElementsByTagName("doclink")[0].childNodes[0].nodeValue +
           "\" target=\"_blank\">[" +
           x[i].getElementsByTagName("docname")[0].childNodes[0].nodeValue +
-          "]</a></p>"
+          "]</a></p>" +
+          "<p class=\"lead\">" +
+          x[i].getElementsByTagName("abstract")[0].childNodes[0].nodeValue +
+          "</p>"
         }
         document.getElementById("research").innerHTML = content;
       }
     </script>
-
+<!--
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>-->
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
   </body>
