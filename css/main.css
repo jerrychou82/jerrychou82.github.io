@@ -20,8 +20,9 @@ body {
 /* Tag */
 .tag {
     font-size: 6pt;
-    border-radius: 25px;
+    border-radius: 5px;
     padding: 3px;
+    opacity: 0.85;
 }
 
 .tag-cc {
