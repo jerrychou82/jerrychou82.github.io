@@ -4,8 +4,8 @@
     <title>Computational Aspect of Spike Neural Network</title>
     <advisor>Dr. Kai-Min Chung, Dr. Chi-Yen Lu</advisor>
     <abstract>Motivated by the recent heuristics in spike-based neural network (SNN) that SNN is implicitly solving linear system problem, we investigated the intrinsic computational aspect of SNN. We proved that SNN is indeed solving a linear system problem and derived convergence rate. Furthermore, we observed in the simulation that the coefficients produced by SNN were usually small. As a result, we conjectured that SNN is not only solving a linear system, but also finding the smallest feasible solution, i.e. the \(\ell_1\) minimization problem. To prove this connection, we introduced the duality theorem in convex geometry and showed that SNN is approximating a projected-gradient algorithm in the dual program of \(\ell_1\) minimization problem.</abstract>
-    <docname>Technical Report</docname>
-    <doclink>cnchou_research_computational_tradeoff.pdf</doclink>
+    <docname>Manuscript</docname>
+    <doclink>cnchou_research_snn.pdf</doclink>
   </research>
 
   <research>
@@ -17,7 +17,7 @@
   </research>
 
   <research>
-    <title>Estimating and Testing the Number of Components in Mixture Models</title>
+    <title>Computational and Statistical Gaps in Mixture Models</title>
     <advisor>Professor I-Hsiang Wang</advisor>
     <abstract>Since some of the applications using mixture models only care about the number of components instead of the locations, in this work we investigated whether counting would be easier than locating in different parameters settings. A composite hypothesis testing framework was designed to compare counting and locating. Information-theoretic lower bound and optimal estimator was proposed and other extensions are still ongoing.</abstract>
     <docname>Technical Report</docname>

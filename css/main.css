@@ -16,6 +16,47 @@ body {
     background-color: rgba(10%,40%,50%,0.1);
 }
 
+
+/* Tag */
+.tag {
+    font-size: 6pt;
+    border-radius: 25px;
+    padding: 3px;
+}
+
+.tag-cc {
+    background: #BDBDBD;
+}
+
+.tag-si {
+    background: #FFCC00;
+}
+
+.tag-gt {
+    background: #00BFFF;
+}
+
+.tag-dp {
+    background: #669900;
+}
+
+.tag-hs {
+    background: #ff9999;
+}
+
+.tag-it {
+    background: #ffccff;
+}
+
+.tag-ls {
+    background: #ccccff;
+}
+
+.tag-ps {
+    background: #ffcc99;
+}
+
+
 /* Home */
 
 .intro {
@@ -34,7 +75,7 @@ body {
     float: right;
 }
 
-/* Research & Prjects */
+/* Research & Prjects & Notes */
 .topic {
     background: "#FFFFFF";
 }
@@ -48,6 +89,19 @@ body {
     font-size: 22px;
     font-style: oblique;
     font-weight: bold;
+}
+
+.classname {
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.notename {
+    font-size: 14pt;
+}
+
+.note {
+    font-size: 16px;
 }
 
 .details {

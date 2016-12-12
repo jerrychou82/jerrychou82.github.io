@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mynotes>
+  <class>
+    <classname>Technical Notes</classname>
+    <note>
+      <topic>Circuit Lower Bound</topic>
+      <id>cc-ckb</id>
+      <link>cc-circuitlowerbound.pdf</link>
+      <tag>cc</tag>
+      <tagname>Computational Complexity</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Relativization and Black-Box Separation</topic>
+      <id>cc-rbbs</id>
+      <link>cc-Relativization and Black-Box Separation.pdf</link>
+      <tag>cc</tag>
+      <tagname>Computational Complexity</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>PCP Theorem</topic>
+      <id>cc-pcp</id>
+      <link>cc-pcp.pdf</link>
+      <tag>cc</tag>
+      <tagname>Computational Complexity</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Differential Privacy and Adaptive Data Analysis</topic>
+      <id>dp-ada</id>
+      <link>dp-ada.pdf</link>
+      <tag>dp</tag>
+      <tagname>Differential Privacy</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Combinatorial Nullstellensatz</topic>
+      <id>gt-cn</id>
+      <link>gt-combinatorial-nullstellensatz.pdf</link>
+      <tag>gt</tag>
+      <tagname>Graph Theory</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Topological Method: Simplicial Complex</topic>
+      <id>gt-tm-sc</id>
+      <link>gt-topological method - simplicial complex.pdf</link>
+      <tag>gt</tag>
+      <tagname>Graph Theory</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Topological Method: Kneser Conjecture</topic>
+      <id>gt-tm-kc</id>
+      <link>gt-topological method - Kneser conjecture.pdf</link>
+      <tag>gt</tag>
+      <tagname>Graph Theory</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>f-divergences</topic>
+      <id>hs-fdiv</id>
+      <link>hs-f-divergences-original.pdf</link>
+      <tag>hs</tag>
+      <tagname>High-dimensional Statistics</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Survey on Recent Progress in the Tradeoff between Statistical and Computational Feasibility</topic>
+      <id>hs-tradeoff</id>
+      <link>hs-HCP HSP SOS.pdf</link>
+      <tag>hs</tag>
+      <tagname>High-dimensional Statistics</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Sum-Of-Squares and the Planted Clique Problem</topic>
+      <id>hs-sos</id>
+      <link>hs-sos.pdf</link>
+      <tag>hs</tag>
+      <tagname>High-dimensional Statistics</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Linear System: Overview</topic>
+      <id>ls-overview</id>
+      <link>ls-overview.pdf</link>
+      <tag>ls</tag>
+      <tagname>Linear System</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Linear System: Matrix Tree Theorem</topic>
+      <id>ls-mtt</id>
+      <link>ls-matrix tree.pdf</link>
+      <tag>ls</tag>
+      <tagname>Linear System</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Linear System: Electrical Circuit</topic>
+      <id>ls-ec</id>
+      <link>ls-electrical circuit.pdf</link>
+      <tag>ls</tag>
+      <tagname>Linear system</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Expanders</topic>
+      <id>ps-expanders</id>
+      <link>ps-expanders.pdf</link>
+      <tag>ps</tag>
+      <tagname>Pseudorandomness</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Extractors: Overview</topic>
+      <id>ps-extractors</id>
+      <link>ps-extractor_introduction.pdf</link>
+      <tag>ps</tag>
+      <tagname>Pseudorandomness</tagname>
+      <intro>XXX</intro>
+    </note>
+  </class>
+  <class>
+    <classname>Classes</classname>
+    <note>
+      <topic>Statistical Inference: Distributions</topic> 
+      <id>si-distributions</id>
+      <link>si-Distributions.pdf</link>
+      <tag>si</tag>
+      <tagname>Statistical Inferernce</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Statistical Inference: Multivariate Probability and Related Properties</topic> 
+      <id>si-mp</id>
+      <link>si-MultivariateProbabilityAndRelatedProperties.pdf</link>
+      <tag>si</tag>
+      <tagname>Statistical Inferernce</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Statistical Inference: Probability Theory</topic> 
+      <id>si-pt</id>
+      <link>si-Probability_Theory.pdf</link>
+      <tag>si</tag>
+      <tagname>Statistical Inferernce</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Statistical Inference: Transformation</topic> 
+      <id>si-transformation</id>
+      <link>si-Transformation.pdf</link>
+      <tag>si</tag>
+      <tagname>Statistical Inferernce</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Statistical Inference: Large Deviation Theory</topic> 
+      <id>si-ldt</id>
+      <link>si-ldt.pdf</link>
+      <tag>si</tag>
+      <tagname>Statistical Inferernce</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Statistical Inference: Poisson and Renewal Process</topic> 
+      <id>si-prp</id>
+      <link>si-poisson and renewal process.pdf</link>
+      <tag>si</tag>
+      <tagname>Statistical Inferernce</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Information Theory: Introduction</topic>
+      <id>it-intro</id>
+      <link>it-introduction.pdf</link>
+      <tag>it</tag>
+      <tagname>Information Theory</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Information Theory: Measure</topic>
+      <id>it-measure</id>
+      <link>it-measure.pdf</link>
+      <tag>it</tag>
+      <tagname>Information Theory</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Information Theory: Source Coding</topic>
+      <id>it-sc</id>
+      <link>it-source coding.pdf</link>
+      <tag>it</tag>
+      <tagname>Information Theory</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Information Theory: Channel Coding</topic>
+      <id>it-cc</id>
+      <link>it-channel coding.pdf</link>
+      <tag>it</tag>
+      <tagname>Information Theory</tagname>
+      <intro>XXX</intro>
+    </note>
+  </class>
+  <class>
+    <classname>Talks</classname>
+  </class>
+</mynotes>

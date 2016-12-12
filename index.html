@@ -27,8 +27,8 @@
             padding-bottom: 20px;
         }
     </style>
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
     <!--<script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
   </head>
@@ -53,7 +53,7 @@
             <ul class="nav navbar-nav">
               <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
               <li><a href="#research" data-toggle="tab">Research</a></li>
-              <li><a href="#projects" data-toggle="tab">Projects</a></li>
+              <li><a href="#notes" data-toggle="tab">Notes</a></li>
               <li><a href="doc/cnchou_cv.pdf" target="_blank">Curriculum Vitae</a>
               <li><a href="http://www.regor.url.tw/cnchou" target="_blank">Blog</a></li>
             </ul>
@@ -80,9 +80,12 @@
         <div class="tab-pane" id="research">
         </div>
 
-<!-- Projects -->
-        <div class="tab-pane" id="projects">
+<!-- Notes -->
+        <div class="tab-pane" id="notes">
+          <h2 class="page-header">Notes</h2>
+          <p style="font-size:12pt">I like to record what I learned from classes, heared from talks, or even seen on others blogs in a casual style. Some notes involved technical details, if you find any mistakes or feel confused, please contact me!</p>
         </div>
+
 
       </div> <!-- container -->
 
@@ -91,7 +94,7 @@
         <ul class="list-unstyled">
         <li class="text-muted">Posted by: Chi-Ning Chou</li>
         <li class="text-muted">Contact: cnchou [at] iis.sinica.edu.tw</li>
-        <li class="text-muted">Last update: EDT 20:34, 22 Oct, 2016</li>
+        <li class="text-muted">Last update: EDT 14:31, 10 Dec, 2016</li>
         </ul>
         </div>
       </footer>
@@ -107,13 +110,13 @@
       }
       xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-          myFunction(this);
+          myResearch(this);
         }
       };
       xmlhttp.open("GET", "doc/research.xml", true);
       xmlhttp.send();
 
-      function myFunction(xml) {
+      function myResearch(xml) {
         var xmlDoc, x, content;
         var parser = new DOMParser();
         xmlDoc =  parser.parseFromString(xml.responseText, "text/xml");
@@ -135,6 +138,78 @@
           "</p>"
         }
         document.getElementById("research").innerHTML = content;
+      }
+    </script>
+    
+    <!-- Notes -->
+    <script type="text/javascript">
+      var xmlhttp;
+      if (window.XMLHttpRequest) {
+        xmlhttp = new XMLHttpRequest();
+      } else {
+        // code for older browsers
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          myNotes(this);
+        }
+      };
+      xmlhttp.open("GET", "doc/notes.xml", true);
+      xmlhttp.send();
+
+      function myNotes(xml) {
+        var xmlDoc, x, content;
+        var parser = new DOMParser();
+        xmlDoc =  parser.parseFromString(xml.responseText, "text/xml");
+        content = document.getElementById("notes").innerHTML;
+        x = xmlDoc.getElementsByTagName("class");
+        list = "<ul>"
+        detail = "";
+        for (i = 0; i < x.length; i++) {
+
+          list += "<li class=\"classname\">" + 
+          x[i].getElementsByTagName("classname")[0].childNodes[0].nodeValue +
+          "</li><ul>";
+
+          detail += "<h3 class=\"page-header\">" +
+          x[i].getElementsByTagName("classname")[0].childNodes[0].nodeValue +
+          "</h3>"; 
+          y = x[i].getElementsByTagName("note");
+          
+          for(j = 0; j < y.length; j++) {
+            
+            list += "<li class=\"notename\"><a  href=\"\#" +
+            y[j].getElementsByTagName("id")[0].childNodes[0].nodeValue +
+            "\">" +
+            y[j].getElementsByTagName("topic")[0].childNodes[0].nodeValue +
+            "</a> <a target=\"_blank\" href=\"doc/notes/" +
+            y[j].getElementsByTagName("link")[0].childNodes[0].nodeValue +
+            "\">[pdf]</a> <span class=\"tag tag-" +
+            y[j].getElementsByTagName("tag")[0].childNodes[0].nodeValue +
+            "\">" +
+            y[j].getElementsByTagName("tagname")[0].childNodes[0].nodeValue +
+            "</span></li>";
+            
+            detail += "<span id=\"" +
+            y[j].getElementsByTagName("id")[0].childNodes[0].nodeValue +
+            "\" class=\"notename\">" +
+            y[j].getElementsByTagName("topic")[0].childNodes[0].nodeValue +
+            " <a target=\"_blank\" href=\"doc/notes/" +
+            y[j].getElementsByTagName("link")[0].childNodes[0].nodeValue +
+            "\">[pdf]</a> <span class=\"tag tag-" +
+            y[j].getElementsByTagName("tag")[0].childNodes[0].nodeValue +
+            "\">" +
+            y[j].getElementsByTagName("tagname")[0].childNodes[0].nodeValue +
+            "</span><p>" +
+            y[j].getElementsByTagName("intro")[0].childNodes[0].nodeValue +
+            "</p></span>";
+          }
+          list += "</ul>";
+        }
+        list += "</ul>"
+        content += list + detail;
+        document.getElementById("notes").innerHTML = content;
       }
     </script>
 <!--
