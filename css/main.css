@@ -79,6 +79,15 @@ body {
     float: right;
 }
 
+#bookcover {
+    width: 200px;
+    float: right;
+}
+
+.bookintro {
+    margin-right: 300px;
+}
+
 /* Research & Prjects & Notes */
 .topic {
     background: "#FFFFFF";
