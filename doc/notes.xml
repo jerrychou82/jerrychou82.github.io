@@ -208,5 +208,13 @@
   </class>
   <class>
     <classname>Talks</classname>
+    <note>
+      <topic>Hierarchies of Relaxations and their Strengths and Limitations</topic>
+      <id>talk-sdp-hierarchies2</id>
+      <link>talk-sdp-simon-sdphierarchies-2.pdf</link>
+      <tag>sdp</tag>
+      <tagname>Semidefinite Programming</tagname>
+      <intro>XXX></intro>
+    </note>
   </class>
 </mynotes>
