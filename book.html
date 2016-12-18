@@ -10,7 +10,6 @@ body{
     background:#ccc;
 }
 #magazine{
-    width:1000px;
     height:100px;
 }
 #magazine .turn-page{
@@ -36,7 +35,8 @@ body{
 <script type="text/javascript">
   $(window).ready(function() {
     var h = $(window).height();
-    $('#magazine').height(h);
+    $('#magazine').height(h-30);
+    $('#magazine').width((h-30)*1.5);
     $('#magazine').turn({
         display: 'double',
         acceleration: true,
