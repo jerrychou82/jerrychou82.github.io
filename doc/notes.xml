@@ -35,6 +35,14 @@
       <intro>XXX</intro>
     </note>
     <note>
+      <topic>Randomness Extractors: Introduction</topic>
+      <id>ex-intro</id>
+      <link>ex-introduction.pdf</link>
+      <tag>ex</tag>
+      <tagname>Randomness Extractors</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
       <topic>Combinatorial Nullstellensatz</topic>
       <id>gt-cn</id>
       <link>gt-combinatorial-nullstellensatz.pdf</link>
@@ -110,14 +118,6 @@
       <topic>Expanders</topic>
       <id>ps-expanders</id>
       <link>ps-expanders.pdf</link>
-      <tag>ps</tag>
-      <tagname>Pseudorandomness</tagname>
-      <intro>XXX</intro>
-    </note>
-    <note>
-      <topic>Extractors: Overview</topic>
-      <id>ps-extractors</id>
-      <link>ps-extractor_introduction.pdf</link>
       <tag>ps</tag>
       <tagname>Pseudorandomness</tagname>
       <intro>XXX</intro>
@@ -209,12 +209,28 @@
   <class>
     <classname>Talks</classname>
     <note>
-      <topic>Hierarchies of Relaxations and their Strengths and Limitations</topic>
+      <topic>David Steurer - Hierarchies of Relaxations and their Strengths and Limitations</topic>
       <id>talk-sdp-hierarchies2</id>
       <link>talk-sdp-simon-sdphierarchies-2.pdf</link>
       <tag>sdp</tag>
       <tagname>Semidefinite Programming</tagname>
       <intro>XXX></intro>
+    </note>
+    <note>
+      <topic>Salil Vadhan - Robust Traceability from Trace Amounts</topic>
+      <id>talk-dp-robust</id>
+      <link>talk-dp-salil-robust.pdf</link>
+      <tag>dp</tag>
+      <tagname>Differential Privacy</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Shayan Oveis Gharan - Effective-Resistance-Reducing Flows, Spectrally Thin Trees, and Asymmetric TSP</topic>
+      <id>talk-graph</id>
+      <link>talk-graph-shayan-ATSP.pdf</link>
+      <tag>gt</tag>
+      <tagname>Graph Problem</tagname>
+      <intro>XXX</intro>
     </note>
   </class>
 </mynotes>

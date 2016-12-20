@@ -22,7 +22,7 @@ body {
     font-size: 6pt;
     border-radius: 5px;
     padding: 3px;
-    opacity: 0.85;
+    opacity: 0.8;
 }
 
 .tag-cc {
@@ -38,7 +38,7 @@ body {
 }
 
 .tag-dp {
-    background: #669900;
+    background: #A9DFBF;
 }
 
 .tag-hs {
@@ -61,6 +61,11 @@ body {
     background: #A9F5E1;
 }
 
+.tag-ex {
+    background: #E6ED8F;
+}
+
+
 /* Home */
 
 .intro {
@@ -82,10 +87,12 @@ body {
 #bookcover {
     width: 200px;
     float: right;
+    margin-right:10%;
+    margin-bottom: 30px;
 }
 
 .bookintro {
-    margin-right: 300px;
+    margin-right: 40%;
 }
 
 /* Research & Prjects & Notes */
