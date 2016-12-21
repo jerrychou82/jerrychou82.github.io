@@ -232,5 +232,13 @@
       <tagname>Graph Problem</tagname>
       <intro>XXX</intro>
     </note>
+    <note>
+      <topic>Explicit Two-Source Extractors and Resilient Functions</topic>
+      <id>talk-ex-2source</id>
+      <link>talk-ex-2source.pdf</link>
+      <tag>ex</tag>
+      <tagname>Randomness Extractors</tagname>
+      <intro>XXX</intro>
+    </note>
   </class>
 </mynotes>
