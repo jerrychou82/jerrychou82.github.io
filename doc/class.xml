@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<myclass>
+  <class>
+    <classname>Statistical Inference</classname>
+    <classtag>si</classtag>
+    <note>
+      <topic>Distributions</topic> 
+      <id>si-distributions</id>
+      <link>si-Distributions.pdf</link>
+      <tag>si</tag>
+      <tagname>Statistical Inferernce</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Multivariate Probability and Related Properties</topic> 
+      <id>si-mp</id>
+      <link>si-MultivariateProbabilityAndRelatedProperties.pdf</link>
+      <tag>si</tag>
+      <tagname>Statistical Inferernce</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Probability Theory</topic> 
+      <id>si-pt</id>
+      <link>si-Probability_Theory.pdf</link>
+      <tag>si</tag>
+      <tagname>Statistical Inferernce</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Transformation</topic> 
+      <id>si-transformation</id>
+      <link>si-Transformation.pdf</link>
+      <tag>si</tag>
+      <tagname>Statistical Inferernce</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Project 1: Large Deviation Theory</topic> 
+      <id>si-ldt</id>
+      <link>si-ldt.pdf</link>
+      <tag>si</tag>
+      <tagname>Statistical Inferernce</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Project 2: Poisson and Renewal Process</topic> 
+      <id>si-prp</id>
+      <link>si-poisson and renewal process.pdf</link>
+      <tag>si</tag>
+      <tagname>Statistical Inferernce</tagname>
+      <intro>XXX</intro>
+    </note>
+  </class>
+  <class>
+    <classname>Information Theory</classname>
+    <classtag>it</classtag>
+    <note>
+      <topic>Introduction</topic>
+      <id>it-intro</id>
+      <link>it-introduction.pdf</link>
+      <tag>it</tag>
+      <tagname>Information Theory</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Measure</topic>
+      <id>it-measure</id>
+      <link>it-measure.pdf</link>
+      <tag>it</tag>
+      <tagname>Information Theory</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Source Coding</topic>
+      <id>it-sc</id>
+      <link>it-source coding.pdf</link>
+      <tag>it</tag>
+      <tagname>Information Theory</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Channel Coding</topic>
+      <id>it-cc</id>
+      <link>it-channel coding.pdf</link>
+      <tag>it</tag>
+      <tagname>Information Theory</tagname>
+      <intro>XXX</intro>
+    </note>
+  </class>
+</myclass>
+
+
+
+
+

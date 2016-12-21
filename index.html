@@ -136,6 +136,7 @@
         </div>
       </footer>
 
+    
     <!-- XML -->
     <script type="text/javascript">
       var xmlhttp;
@@ -202,57 +203,97 @@
         content = document.getElementById("notes").innerHTML;
         x = xmlDoc.getElementsByTagName("class");
         list = "<ul>"
-        detail = "";
         for (i = 0; i < x.length; i++) {
 
           list += "<li class=\"classname\">" + 
           x[i].getElementsByTagName("classname")[0].childNodes[0].nodeValue +
           "</li><ul>";
 
-          detail += "<h3 class=\"page-header\">" +
-          x[i].getElementsByTagName("classname")[0].childNodes[0].nodeValue +
-          "</h3>"; 
           y = x[i].getElementsByTagName("note");
           
           for(j = 0; j < y.length; j++) {
             
-            list += "<li class=\"notename\"><a  href=\"\#" +
-            y[j].getElementsByTagName("id")[0].childNodes[0].nodeValue +
-            "\">" +
+            list += "<li class=\"notename\">" +
             y[j].getElementsByTagName("topic")[0].childNodes[0].nodeValue +
-            "</a> <a target=\"_blank\" href=\"doc/notes/" +
+            "<a target=\"_blank\" href=\"doc/notes/" +
             y[j].getElementsByTagName("link")[0].childNodes[0].nodeValue +
             "\">[pdf]</a> <span class=\"tag tag-" +
             y[j].getElementsByTagName("tag")[0].childNodes[0].nodeValue +
             "\">" +
             y[j].getElementsByTagName("tagname")[0].childNodes[0].nodeValue +
             "</span></li>";
+          }
+          list += "</ul>";
+        }
+        //list += "</ul>"
+        content += list;
+        document.getElementById("notes").innerHTML = content;
+      }
+    </script>
+
+    <!-- Class -->
+    <script type="text/javascript">
+      var xmlhttp;
+      if (window.XMLHttpRequest) {
+        xmlhttp = new XMLHttpRequest();
+      } else {
+        // code for older browsers
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          myClasses(this);
+        }
+      };
+      xmlhttp.open("GET", "doc/class.xml", true);
+      xmlhttp.send();
+
+      function myClasses(xml) {
+        var xmlDoc, x, content;
+        var parser = new DOMParser();
+        xmlDoc =  parser.parseFromString(xml.responseText, "text/xml");
+        content = document.getElementById("notes").innerHTML;
+        x = xmlDoc.getElementsByTagName("class");
+        //list = "<ul>"
+        list = "";
+        list += "<li class=\"classname\">Courses</li><ul>";
+
+        for (i = 0; i < x.length; i++) {
+
+          list += "<li class=\"notename\"><button type=\"button\" class=\"btn-link\" data-toggle=\"collapse\" data-target=\"#" + 
+          x[i].getElementsByTagName("classtag")[0].childNodes[0].nodeValue +
+          "\">" +
+          x[i].getElementsByTagName("classname")[0].childNodes[0].nodeValue +
+          "</button>" +
+          "</li><div id=\"" +
+          x[i].getElementsByTagName("classtag")[0].childNodes[0].nodeValue +
+          "\" class=\"collapse\"><ul>";
+
+          //<button type="button" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+          //<div id="demo" class="collapse">Test collapse1</div>
+
+          y = x[i].getElementsByTagName("note");
+          
+          for(j = 0; j < y.length; j++) {
             
-            detail += "<span id=\"" +
-            y[j].getElementsByTagName("id")[0].childNodes[0].nodeValue +
-            "\" class=\"notename\">" +
+            list += "<li class=\"notename\">" +
             y[j].getElementsByTagName("topic")[0].childNodes[0].nodeValue +
-            " <a target=\"_blank\" href=\"doc/notes/" +
+            "<a target=\"_blank\" href=\"doc/notes/" +
             y[j].getElementsByTagName("link")[0].childNodes[0].nodeValue +
             "\">[pdf]</a> <span class=\"tag tag-" +
             y[j].getElementsByTagName("tag")[0].childNodes[0].nodeValue +
             "\">" +
             y[j].getElementsByTagName("tagname")[0].childNodes[0].nodeValue +
-            "</span><p>" +
-            y[j].getElementsByTagName("intro")[0].childNodes[0].nodeValue +
-            "</p></span>";
+            "</span></li>";
           }
-          list += "</ul>";
+          list += "</ul></div>";
         }
         list += "</ul>"
         content += list;
-        //content += list + detail;
         document.getElementById("notes").innerHTML = content;
       }
     </script>
-<!--
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>-->
+
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
   </body>
