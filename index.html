@@ -202,7 +202,8 @@
         xmlDoc =  parser.parseFromString(xml.responseText, "text/xml");
         content = document.getElementById("notes").innerHTML;
         x = xmlDoc.getElementsByTagName("class");
-        list = "<ul>"
+        list = "";
+        //list = "<ul>";
         for (i = 0; i < x.length; i++) {
 
           list += "<li class=\"classname\">" + 
