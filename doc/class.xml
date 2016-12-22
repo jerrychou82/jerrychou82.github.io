@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <myclass>
   <class>
-    <classname>Statistical Inference</classname>
+    <classname>Advanced Statistical Inference I (2015 Fall)</classname>
     <classtag>si</classtag>
     <note>
       <topic>Distributions</topic> 
@@ -53,7 +53,7 @@
     </note>
   </class>
   <class>
-    <classname>Information Theory</classname>
+    <classname>Information Theory (2015 Fall)</classname>
     <classtag>it</classtag>
     <note>
       <topic>Introduction</topic>
@@ -88,8 +88,47 @@
       <intro>XXX</intro>
     </note>
   </class>
+  <class>
+    <classname>Stochastic Process (2015 Spring)</classname>
+    <classtag>sp</classtag>
+    <note>
+      <topic>Project 1: How to Quantitate a Markov Chain?</topic>
+      <id>sp-project1</id>
+      <link>sp-project1.pdf</link>
+      <tag>sp</tag>
+      <tagname>Stochastic Process</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Project 2: Using MCMC to Break Stream Cipher</topic>
+      <id>sp-project2</id>
+      <link>sp-project2.pdf</link>
+      <tag>sp</tag>
+      <tagname>Stochastic Process</tagname>
+      <intro>XXX</intro>
+    </note>
+  </class>
+  <class>
+    <classname>Summer School: Mathematical Signal Processing and Data Analysis (2015 Summer)</classname>
+    <classtag>ss</classtag>
+    <note>
+      <topic>Bernstein’s Inequality</topic>
+      <id>ss-bi</id>
+      <link>ss-bi.pdf</link>
+      <tag>si</tag>
+      <tagname>Statistical Inference</tagname>
+      <intro>XXX</intro>
+    </note>
+    <note>
+      <topic>Marchenko–Pastur Distribution</topic>
+      <id>ss-mpd</id>
+      <link>ss-mpd.pdf</link>
+      <tag>si</tag>
+      <tagname>Statistical Inference</tagname>
+      <intro>XXX</intro>
+    </note>
+  </class>
 </myclass>
-
 
 
 
