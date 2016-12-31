@@ -68,7 +68,7 @@
 
 <!-- Home -->
         <div class="tab-pane active" id="home">
-          <div id="intro" class="jumbotron">
+          <div id="intro" class="jumbotron" style="font-size:16px">
             <a class="fancybox" rel="group" href="img/big.jpg"><img id="frontphoto" src="img/small.png" alt="" /></a>
             <p class="intro"> I'm Chi-Ning Chou, currently a research assistant under the supervision of Dr. <a href="http://www.iis.sinica.edu.tw/~kmchung/" target="_blank">Kai-Min Chung</a> at <a href="http://www.iis.sinica.edu.tw/index_en.html" target="_blank">Institute of Information Science (IIS)</a>, <a href="http://www.sinica.edu.tw/index.shtml" target="_blank">Academia Sinica</a>. I received my Bachelor degree in <a href="https://www.csie.ntu.edu.tw" target="_blank">Computer Science and Information Engineering</a> at <a href="https://www.ntu.edu.tw" target="_blank">National Taiwan University</a> this (2016) June with minor in Mathematics.
             </p>
@@ -163,17 +163,22 @@
         for (i = 0; i < x.length; i++) {
           content += "<div class=\"topic\"><p class=\"title\">" + 
           x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
-          "</div>" +
+          "</p></div>" +
           "<p class=\"advisor\">Advisor: " +
           x[i].getElementsByTagName("advisor")[0].childNodes[0].nodeValue + 
           " <a href=\"doc/" +
           x[i].getElementsByTagName("doclink")[0].childNodes[0].nodeValue +
           "\" target=\"_blank\">[" +
           x[i].getElementsByTagName("docname")[0].childNodes[0].nodeValue +
-          "]</a></p>" +
-          "<p class=\"lead\">" +
+          "]</a></p>"+
+          "<div class=\"media-left\"><a class=\"fancybox\" rel=\"group\" href=\"img/" +
+          x[i].getElementsByTagName("piclink")[0].childNodes[0].nodeValue +
+          "\"><img class=\"researchpic\" src=\"img/"+
+          x[i].getElementsByTagName("piclink")[0].childNodes[0].nodeValue +
+          "\" alt=\"\" /></a></div>" +
+          "<div class=\"media-body\"><p class=\"lead\">" +
           x[i].getElementsByTagName("abstract")[0].childNodes[0].nodeValue +
-          "</p>"
+          "</p></div>"
         }
         document.getElementById("research").innerHTML = content;
       }
