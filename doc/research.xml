@@ -21,7 +21,8 @@
   <research>
     <title>Computational and Statistical Gaps in Mixture Models</title>
     <advisor>Professor I-Hsiang Wang</advisor>
-    <abstract>Since some of the applications using mixture models only care about the number of components instead of the locations, in this work we investigated whether counting would be easier than locating in different parameters settings. A composite hypothesis testing framework was designed to compare counting and locating. Information-theoretic lower bound and optimal estimator was proposed and other extensions are still ongoing.</abstract>
+    <abstract>In this work, we investigated the Gaussian mixture model (GMM), in which the data are assumed to be generated from a distribution consisting of weighted Gaussian components with different means and variances. There are two common problems for GMM: Locating the components and counting the number of components. The two problems are related, as we can count the number of components simply by the results of locating. However, the opposite direction is not as straightforward, so we proposed an interesting question: Are there separations between counting and locating in sample or time complexities?
+For the sample complexity part, I found interesting separation results in the case where there are only one or two components. One of the findings was a quadratic difference in the distance parameter (i.e., the minimum distance between components) when the components are not too close to each other. As we are working on extending to general cases, these discoveries hinted the potential of designing algorithms for applications that only care about counting (e.g., counting the number of persons in a picture).</abstract>
     <docname>Technical Report</docname>
     <doclink>cnchou_research_mixture</doclink>
     <piclink>gmm.png</piclink>
