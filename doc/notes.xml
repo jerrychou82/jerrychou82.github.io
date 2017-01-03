@@ -165,5 +165,13 @@
       <tagname>High-dimensional Statistics</tagname>
       <intro>XXX</intro>
     </note>
+    <note>
+      <topic>Ryan Williams - Thinking Algorithmically About Impossibility</topic>
+      <id>talk-circuit-ryan-intro</id>
+      <link>talk-circuit-ryan-intro.pdf</link>
+      <tag>cl</tag>
+      <tagname>Circuit Lower Bounds</tagname>
+      <intro>XXX</intro>
+    </note>
   </class>
 </mynotes>
