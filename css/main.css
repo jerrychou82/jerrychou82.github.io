@@ -21,7 +21,7 @@ body {
 .tag {
     font-size: 6pt;
     border-radius: 5px;
-    padding: 3px;
+    padding: 1px;
     opacity: 0.8;
 }
 
@@ -133,7 +133,7 @@ p.intro {
 }
 
 .notename {
-    font-size: 14pt;
+    font-size: 12pt;
 }
 
 .note {
