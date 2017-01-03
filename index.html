@@ -168,12 +168,14 @@
           x[i].getElementsByTagName("advisor")[0].childNodes[0].nodeValue + 
           " <a href=\"doc/" +
           x[i].getElementsByTagName("doclink")[0].childNodes[0].nodeValue +
-          "\" target=\"_blank\">[" +
+          ".pdf\" target=\"_blank\">[" +
           x[i].getElementsByTagName("docname")[0].childNodes[0].nodeValue +
-          "]</a></p>"+
+          "]</a> <a href=\"doc/" +
+          x[i].getElementsByTagName("doclink")[0].childNodes[0].nodeValue +
+          "_slide.pdf\" target=\"_black\">[slide]</a></p>"+
           "<div class=\"media-left\"><a class=\"fancybox\" rel=\"group\" href=\"img/" +
           x[i].getElementsByTagName("piclink")[0].childNodes[0].nodeValue +
-          "\"><img class=\"researchpic\" src=\"img/"+
+          "\"><img class=\"researchpic img-rounded\" src=\"img/"+
           x[i].getElementsByTagName("piclink")[0].childNodes[0].nodeValue +
           "\" alt=\"\" /></a></div>" +
           "<div class=\"media-body\"><p class=\"lead\">" +

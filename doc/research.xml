@@ -5,8 +5,8 @@
     <advisor>Dr. Kai-Min Chung, Dr. Chi-Yen Lu</advisor>
     <abstract>Motivated by the recent heuristics in spike-based neural network (SNN) that SNN is implicitly solving linear system problem, we investigated the intrinsic computational aspect of SNN. We proved that SNN is indeed solving a linear system problem and derived convergence rate. Furthermore, we observed in the simulation that the coefficients produced by SNN were usually small. As a result, we conjectured that SNN is not only solving a linear system, but also finding the smallest feasible solution, i.e. the \(\ell_1\) minimization problem. To prove this connection, we introduced the duality theorem in convex geometry and showed that SNN is approximating a projected-gradient algorithm in the dual program of \(\ell_1\) minimization problem.</abstract>
     <docname>Manuscript</docname>
-    <doclink>cnchou_research_snn.pdf</doclink>
-    <piclink>snn.jpg</piclink>
+    <doclink>cnchou_research_snn</doclink>
+    <piclink>snn.png</piclink>
   </research>
 
   <research>
@@ -14,7 +14,7 @@
     <advisor>Professor I-Hsiang Wang</advisor>
     <abstract> In this work, we studied the computational and statistical tradeoff in graphical problems. First, we investigated the information-theoretic limit of the hidden subgraph problem and derived some early-stage results. As to the computational part, motivated by the computational connection of the planted clique problem and some high-dimensional statistics problem,we found sum-of-squares (SOS) hierarchy being a powerful tools. Currently, we are working on applying SOS techniques for the hidden subgraph problems.</abstract>
     <docname>Technical Report</docname>
-    <doclink>cnchou_research_computational_tradeoff.pdf</doclink>
+    <doclink>cnchou_research_computational_tradeoff</doclink>
     <piclink>network.png</piclink>
   </research>
 
@@ -23,8 +23,8 @@
     <advisor>Professor I-Hsiang Wang</advisor>
     <abstract>Since some of the applications using mixture models only care about the number of components instead of the locations, in this work we investigated whether counting would be easier than locating in different parameters settings. A composite hypothesis testing framework was designed to compare counting and locating. Information-theoretic lower bound and optimal estimator was proposed and other extensions are still ongoing.</abstract>
     <docname>Technical Report</docname>
-    <doclink>cnchou_research_mixture.pdf</doclink>
-    <piclink>gmm.jpg</piclink>
+    <doclink>cnchou_research_mixture</doclink>
+    <piclink>gmm.png</piclink>
   </research>
 
   <research>
@@ -32,8 +32,8 @@
     <advisor>Advisor: Professor Professor Shih-Wei Liao, Dr. I-Ping Tu</advisor>
     <abstract>Bitcoin is the first secure decentralized electronic currency system. However, it is known to be inefficient and has the hazard of double spending. In this paper, we aimed to improve the intrinsic overhead of Bitcoin construction and decrease the probability of double spending. To fulfill our goal, we first formalized a Bitcoin-based decentralized secure network model in order to present a quantitative analysis. Next, to resolve the risk of double spending, we proposed a mechanism to dynamically modify the difficulty of each participants in the sense that those who wins more recently has less probability to win next time. To analyze the performance of the dynamic difficulty mechanism, we observed that the dynamics of the system enjoys a high-order Markov property, which can be modeled with a high- dimensional transition matrix. Finally, using the high-order Markov chain model, we showed that the dynamic difficulty mechanism effectively decreases the probability of double spending and results in a more efficient Bitcoin-based system without sacrificing the security.</abstract>
     <docname>Manuscript</docname>
-    <doclink>cnchou_research_bitcoin.pdf</doclink>
-    <piclink>bitcoin.jpg</piclink>
+    <doclink>cnchou_research_bitcoin</doclink>
+    <piclink>bitcoin.png</piclink>
   </research>
 </experience>
 
