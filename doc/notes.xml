@@ -152,7 +152,9 @@
     <note>
       <topic>David Zuckerman - Explicit Two-Source Extractors and Resilient Functions</topic>
       <id>talk-ex-2source</id>
-      <link>talk-ex-2source.pdf</link>
+      <link>talk-ex-2source-intro.pdf</link>
+      <link>talk-ex-2source-resilient.pdf</link>
+      <link>talk-ex-2source-math.pdf</link>
       <tag>ex</tag>
       <tagname>Randomness Extractors</tagname>
       <intro>XXX</intro>

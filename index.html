@@ -222,10 +222,15 @@
           for(j = 0; j < y.length; j++) {
             
             list += "<li class=\"notename\">" +
-            y[j].getElementsByTagName("topic")[0].childNodes[0].nodeValue +
-            "<a target=\"_blank\" href=\"doc/notes/" +
-            y[j].getElementsByTagName("link")[0].childNodes[0].nodeValue +
-            "\">[pdf]</a> <span class=\"tag tag-" +
+            y[j].getElementsByTagName("topic")[0].childNodes[0].nodeValue;
+
+            z = y[j].getElementsByTagName("link");
+            for(k = 0; k < z.length; k++) {
+              list += " <a target=\"_blank\" href=\"doc/notes/" + 
+              z[k].childNodes[0].nodeValue +
+              "\">[pdf]</a>";
+            }
+            list += " <span class=\"tag tag-" +
             y[j].getElementsByTagName("tag")[0].childNodes[0].nodeValue +
             "\">" +
             y[j].getElementsByTagName("tagname")[0].childNodes[0].nodeValue +
